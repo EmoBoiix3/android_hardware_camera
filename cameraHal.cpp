@@ -60,7 +60,7 @@ struct blitreq {
 };
 
 /* Prototypes and extern functions. */
-extern "C" android::sp<android::CameraHardwareInterface> openCameraHardware(int id);
+extern "C" android::sp<android::CameraHardwareInterface> HAL_openCameraHardware(int id);
 int qcamera_device_open(const hw_module_t* module, const char* name,
                         hw_device_t** device);
 int CameraHAL_GetNum_Cameras(void);
