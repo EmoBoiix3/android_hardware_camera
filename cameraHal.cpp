@@ -614,7 +614,7 @@ qcamera_device_open(const hw_module_t* module, const char* name,
    LOGD("qcamera_device_open: name:%s device:%p cameraId:%d\n", 
         name, device, cameraId);
 
-   qCamera = openCameraHardware(cameraId);
+   qCamera = HAL_openCameraHardware(cameraId);
    camera_device_t* camera_device = NULL;
    camera_device_ops_t* camera_ops = NULL;
 
