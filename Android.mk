@@ -8,7 +8,7 @@ LOCAL_MODULE_PATH    := $(TARGET_OUT_SHARED_LIBRARIES)/hw
 LOCAL_MODULE         := camera.$(TARGET_BOARD_PLATFORM)
 LOCAL_SRC_FILES      := cameraHal.cpp
 LOCAL_PRELINK_MODULE := false
-CAMERA_LIB 			 := camera_gio
+CAMERA_LIB           := camera_ace
 
 TARGET_GLOBAL_LD_DIRS  += -L$(LOCAL_PATH) -l${CAMERA_LIB}
 LOCAL_SHARED_LIBRARIES := liblog libdl libutils libcamera_client libbinder libcutils libhardware
